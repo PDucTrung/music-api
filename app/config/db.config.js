@@ -1,3 +1,6 @@
+// env
+require("dotenv").config();
+
 module.exports = {
-  url: "mongodb://127.0.0.1:27017/musics",
+  url: `${process.env.MONGODB_URL}/musics`,
 };
